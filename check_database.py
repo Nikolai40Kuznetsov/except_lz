@@ -31,14 +31,7 @@ except ValueError:
     print("- Названия столбцов не совпадают")
     print("Ожидаемые", exemplar_columns)
     print("Фактические", file_columns)
-str(check['Участники гражданского оборота'].dtype)
-# for column_name in check.columns:
-#     print(str(check[m].dtype))
-#     m += 1
-
-
-
-# check_types = []
-# check_types = check.dtypes
-# print(check_types)
-# file.dtypes
+for column_name in file.columns:
+    print(str(check[column_name].dtype))
+for column_name in check.columns:
+    print(str(check[column_name].dtype))
